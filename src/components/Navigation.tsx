@@ -8,8 +8,12 @@ const Navigation = () => {
     <nav className="p-4 border-b" role="navigation">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
         <div className="flex items-center space-x-4">
-          <BookOpen className="h-6 w-6 text-primary" />
-          <h1 className="text-xl font-bold">AudioEdu</h1>
+          <img 
+            src="/sonic-vision-logo.png" 
+            alt="Sonic Vision Logo" 
+            className="h-8 w-8"
+          />
+          <h1 className="text-xl font-bold text-secondary">Sonic Vision</h1>
         </div>
 
         <div className="flex-1 max-w-lg mx-4">
