@@ -26,17 +26,17 @@ const FileUpload = () => {
   return (
     <div
       {...getRootProps()}
-      className="border-2 border-dashed border-primary/50 rounded-lg p-12 text-center cursor-pointer transition-colors hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+      className="border-2 border-dashed border-secondary/50 rounded-lg p-12 text-center cursor-pointer transition-colors hover:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 bg-black/30"
       role="button"
       tabIndex={0}
       aria-label="Upload PDF file"
     >
       <input {...getInputProps()} aria-label="PDF file input" />
-      <Upload className="mx-auto h-12 w-12 text-primary/50" />
-      <h3 className="mt-4 text-lg font-medium">
+      <Upload className="mx-auto h-12 w-12 text-secondary/50" />
+      <h3 className="mt-4 text-lg font-medium text-secondary">
         {isDragActive ? "Drop your PDF here" : "Upload PDF"}
       </h3>
-      <p className="mt-2 text-sm text-gray-600">
+      <p className="mt-2 text-sm text-gray-400">
         Drag and drop your PDF file here, or click to select
       </p>
       <p className="mt-1 text-xs text-gray-500">PDF files only, up to 50MB</p>
