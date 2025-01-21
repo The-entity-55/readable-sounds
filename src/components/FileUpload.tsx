@@ -8,7 +8,8 @@ const FileUpload = () => {
     const file = acceptedFiles[0];
     if (file && file.type === 'application/pdf') {
       toast.success('PDF uploaded successfully');
-      // TODO: Handle PDF processing
+      // TODO: Handle PDF processing with Gemini API
+      console.log('Processing PDF:', file.name);
     } else {
       toast.error('Please upload a PDF file');
     }
